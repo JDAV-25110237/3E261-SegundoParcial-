@@ -9,7 +9,14 @@ class Foco{
 + LeerEstado() : EstadoFoco
 }
 
+
 class EstadoFoco 
+class Seriefocos{
+    - Foco focos [10]
+    + MostrarFocos()
+    + EncenderFocos()
+    + MostrarFocos() 
+}
 
 Usuario o--  Foco
 Foco *-- EstadoFoco  
