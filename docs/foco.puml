@@ -1,24 +1,27 @@
-startpuml foco
+@startuml foco
 
-class Usuario 
+class Usuario
 
-class Foco{
-- EstadoFoco estado 
-+ Encender()
-+ Apagar()
-+ LeerEstado() : EstadoFoco
+Class Foco{
+    - EstadoFoco estado
+    + Encender()
+    + Apagar()
+    + LeerEstado(): EstadoFoco
+}
+
+class EstadoFoco
+class SerieFocos{
+   - Foco focos[10]
+   + MostrarFocos()
+   + EncenderFocos()
+   + ApagarFocos()
 }
 
 
-class EstadoFoco 
-class Seriefocos{
-    - Foco focos [10]
-    + MostrarFocos()
-    + EncenderFocos()
-    + MostrarFocos() 
-}
+Usuario o-- Foco
+Foco *-- EstadoFoco
+EstadoFoco --|> Booleano
+SerieFocos "1" *-- "10" Foco
+Usuario o-- SerieFocos 
 
-Usuario o--  Foco
-Foco *-- EstadoFoco  
-EstadoFoco --|> Boleano 
 @enduml
