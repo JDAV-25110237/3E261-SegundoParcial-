@@ -1,3 +1,3 @@
 # pragma once 
-#include <istring> 
-typedef std::string EstadoFoco;
+#include <string> 
+typedef bool EstadoFoco;

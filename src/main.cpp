@@ -1,6 +1,6 @@
 #include <iostream>
-#include <Foco.hpp>
-#include <SerieFocos.hpp>
+#include "Foco.hpp"
+#include "SerieFocos.hpp"
 int main(int argc,char const *argv[])
 {
     Foco foquito;
