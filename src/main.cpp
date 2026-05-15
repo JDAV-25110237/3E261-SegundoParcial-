@@ -1,13 +1,14 @@
 #include <iostream>
-#include "Foco.hpp"
-#include "SerieFocos.hpp"
-int main(int argc,char const *argv[])
+#include <SerieFocos.hpp>
+#include <Foco.hpp>
+
+int main(int argc, char const *argv[])
 {
-    Foco foquito;
-    SerieFocos serie; 
+    SerieFocos serie;
     serie.EncenderFocos();
-    serie.MostarFocos(); 
+    serie.MostarFocos();
     serie.ApagarFocos();
-    serie.MostrarFocos():
-    return 0; 
+    serie.MostarFocos();
+
+    return 0;
 }
